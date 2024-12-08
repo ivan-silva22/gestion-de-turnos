@@ -7,7 +7,7 @@
     
 
     $consultaUsuarios = "SELECT nombre, email, password FROM usuarios WHERE email = '$email'";
-
+    
     $resultado = mysqli_query($conexion, $consultaUsuarios);
 
     if ($resultado && mysqli_num_rows($resultado) > 0) {
